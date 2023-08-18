@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "../components/Button";
 
 const Page = () => {
   return (
@@ -19,6 +20,7 @@ const Page = () => {
                 <li className="pt-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Tworzenie grafik przystosowanych do druku (DTP)</li>
             </ul>
         </div>
+        <div className="px-4"><Button label="Behance" link="https://www.behance.net/krystiankurlej" linkTitle="Behance" /></div>
     </section>
     <section id="development" className="mt-8">
         <span className="px-4 text-neutral-500">Development</span>
@@ -32,6 +34,7 @@ const Page = () => {
               <li className="pt-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Podstawowa znajomość React.js, Next.js</li>
             </ul>
         </div>
+        <div className="px-4"><Button label="Github" link="https://github.com/KrystianKurlej" linkTitle="Github" /></div>
     </section>
     <section id="inne" className="mt-8">
         <span className="px-4 text-neutral-500">Inne</span>
@@ -47,6 +50,7 @@ const Page = () => {
               <li className="pt-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Język angielski na poziomie B2</li>
             </ul>
         </div>
+        <div className="px-4"><Button label="Linkedin" link="https://www.linkedin.com/in/krystian-kurlej-0ba001232/" linkTitle="Linkedin" /></div>
     </section>
     </>
   );

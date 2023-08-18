@@ -8,8 +8,8 @@ const Page = () => {
     <header className="my-12 sm:flex items-center justify-between">
       <h1 className="text-4xl mb-4 sm:mb-0">Karnatech</h1>
       <div className="flex gap-2 w-full sm:w-fit">
-        <Button label="Github" link="https://github.com/KrystianKurlej/SmoothFlow-CMS" linkTitle="SmoothFlow CMS - Github" />
-        <Button label="Strona www" link="https://smooth-flow-cms.vercel.app/" linkTitle="SmoothFlow CMS - Strona www" />
+        <Button label="Github" link="https://github.com/KrystianKurlej/Karnatech" linkTitle="SmoothFlow CMS - Github" />
+        <Button label="Strona www" link="https://karnatech.pl/" linkTitle="Karnatech - Strona www" />
       </div>
     </header>
     <Image src='/img/Karnatech - Header.jpg' alt="Karnatech - Header" width={1920} height={1280} className="rounded my-8"/>
