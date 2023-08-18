@@ -1,27 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.menu-btn {
+  margin: 1em;
+  width: 21px;
+  height: 21px;
+  position: relative;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.menu-btn .hamburger-ico {
+  top: 50%;
+  transform: translateY(calc(-50% - 3px));
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.menu-btn .hamburger-ico, .menu-btn .hamburger-ico::after {
+  position: absolute;
+  width: 21px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: white;
+  transform: rotate(0);
+  transition-duration: 350ms;
 }
+.menu-btn .hamburger-ico::after {
+  content: "";
+  top: 6px;
+}
+.menu-btn .hamburger-ico.active {
+  transform: rotate(45deg);
+}
+.menu-btn .hamburger-ico.active::after {
+  transform: rotate(-90deg);
+  top: calc(50% - 1px);
+}/*# sourceMappingURL=globals.css.map */
