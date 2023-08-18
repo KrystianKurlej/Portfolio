@@ -1,5 +1,7 @@
+'use client'
+
 import Link from "next/link";
-import React from "react";
+import React, {useState} from "react";
 import Image from "next/image";
 
 interface PortfolioCardProps {
@@ -8,9 +10,19 @@ interface PortfolioCardProps {
 }
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({title, slug}) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoaded = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <Link href={`/projekty/${slug}/`} title={`Projekt ${title}`}>
-      <Image className="rounded-lg" src={`/img/Cover - ${title}.jpg`} alt="AlumiDrop" width={1920} height={800} />
+      <div className={`${imageLoaded ?
+      '' : 'skeleton'
+      }`}>
+        <Image className="rounded-lg" src={`/img/Cover - ${title}.jpg`} alt="AlumiDrop" width={1920} height={800} onLoadingComplete={handleImageLoaded}/>
+      </div>
     </Link>
   );
 };

@@ -1,11 +1,23 @@
+'use client'
+
 import Image from "next/image";
-import React from "react";
+import React, {useState} from "react";
 
 const page = () => {
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    const handleImageLoaded = () => {
+        setImageLoaded(true);
+    };
+
   return (
     <>
     <header className="py-5 sm:px-4 mb-8 sm:flex sm:gap-5 sm:items-center">
-        <Image className="mx-auto mb-4 sm:mx-0 sm:mb-0" src='/img/KrystianKurlej.jpeg' alt="Krystian Kurlej" width={200} height={200} />
+        <div className={`w-[200px] h-[200px] min-w-[200px] max-w-none mx-auto mb-4 sm:mx-0 sm:mb-0 ${imageLoaded ?
+        '' : 'skeleton'
+        }`}>
+        <Image className="w-[200px] h-[200px] max-w-none" src='/img/KrystianKurlej.jpeg' alt="Krystian Kurlej" width={200} height={200} onLoadingComplete={handleImageLoaded}/>
+        </div>
         <div>
             <h1 className="text-4xl mb-4">O mnie</h1>
             <p>Jestem doświadczonym grafikiem ze specjalizacją w UI i UX. Tworzę interfejsy, animacje i gotowe do druku grafiki. Ponadto dążę do ciągłego rozwoju w obszarze programowania front-endowego.</p>
