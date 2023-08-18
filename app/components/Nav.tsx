@@ -45,11 +45,11 @@ const Nav: React.FC<NavProps> = ({currentPage}) => {
                     <Image alt="Linkedin" src="/icons/linkedin.svg" width={32} height={32}
                     className="w-10 h-10 sm:w-6 sm:h-6"/>
                 </Link>
-                <Link href="https://github.com/KrystianKurlej" target="_blank">
+                <Link href="https://www.behance.net/krystiankurlej" target="_blank">
                     <Image alt="Behance" src="/icons/behance.svg" width={32} height={32}
                     className="w-10 h-10 sm:w-6 sm:h-6"/>
                 </Link>
-                <Link href="https://www.behance.net/krystiankurlej" target="_blank">
+                <Link href="https://github.com/KrystianKurlej" target="_blank">
                     <Image alt="Github" src="/icons/github.svg" width={32} height={32}
                     className="w-10 h-10 sm:w-6 sm:h-6"/>
                 </Link>
