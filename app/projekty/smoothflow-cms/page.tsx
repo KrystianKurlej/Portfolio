@@ -18,6 +18,10 @@ const Page = () => {
     <p className="mb-4 font-light">W trakcie tworzenia projektu w narzędziu Figma oparłem się na klasach Tailwind CSS. Wykorzystałem nazwy klas do definiowania zmiennych i stylów, co znacząco ułatwia programowanie tych elementów na późniejszych etapach.</p>
     <Image src='/img/SmoothFlow CMS - Tailwind.jpg' alt="SmoothFlow CMS - Tailwind" width={1920} height={1282} className="rounded my-8"/>
     <p className="mb-4 font-light">Dążąc do dalszego rozwoju, pracuję nad implementacją systemu przy użyciu frameworka Next.js, co można śledzić na moim profilu GitHub.</p>
+    <div className="mt-8 flex gap-2 w-full sm:w-fit">
+      <Button label="Github" link="https://github.com/KrystianKurlej/SmoothFlow-CMS" linkTitle="SmoothFlow CMS - Github" />
+      <Button label="Strona www" link="https://smooth-flow-cms.vercel.app/" linkTitle="SmoothFlow CMS - Strona www" />
+    </div>
     </>
   );
 };
