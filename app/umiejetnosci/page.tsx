@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
     <>
     <header className="py-5 px-4 mb-8">
@@ -52,4 +52,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -2,7 +2,7 @@ import React from "react";
 import PortfolioCard from "./components/PortfolioCard";
 import Nav from "./components/Nav";
 
-const page = () => {
+const Page = () => {
   return (
     <>
     <Nav currentPage="Portfolio" />
@@ -17,4 +17,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

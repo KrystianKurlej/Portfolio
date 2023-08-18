@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, {useState} from "react";
 
-const page = () => {
+const Page = () => {
     const [imageLoaded, setImageLoaded] = useState(false);
 
     const handleImageLoaded = () => {
@@ -75,4 +75,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

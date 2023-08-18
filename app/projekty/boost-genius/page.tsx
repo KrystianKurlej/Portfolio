@@ -2,7 +2,7 @@ import Button from "@/app/components/Button";
 import Image from "next/image";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
     <>
     <header className="my-12 sm:flex items-center justify-between">
@@ -18,4 +18,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
