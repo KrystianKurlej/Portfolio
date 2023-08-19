@@ -41,7 +41,6 @@
 
 .skeleton {
 	display: block;
-	aspect-ratio: 824 / 343;
 	position: relative;
 	overflow: hidden;
 	background-color: #343434;
@@ -63,7 +62,7 @@
 			rgba(#121212, 0.5) 60%,
 			rgba(#121212, 0)
 		);
-		animation: shimmer 5s infinite;
+		animation: shimmer 1s infinite;
 		content: "";
 	}
 

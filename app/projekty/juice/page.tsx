@@ -1,9 +1,17 @@
+'use client'
+
 import Button from "@/app/components/Button";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 const Page = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoaded = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <>
     <header className="my-12 sm:flex items-center justify-between">
@@ -19,7 +27,7 @@ const Page = () => {
     <p className="mb-4 font-light">
       Podejście do samego procesu zakupu musiało być nieco inne niż w standardowych projektach platform e-commerce. Specyfika produktu sprawia, że użytkownik nie powinien odczuwać, że proces jest zbyt długi, zachowując przy tym dodatkowe możliwości takie jak odejmowanie składników od gotowego produktu.
     </p>
-    <Image src='/img/Juice - Koszyk.jpg' alt="Juice - Koszyk" width={1050} height={2052} className="rounded my-8"/>
+    <div className={`rounded my-8 ${imageLoaded ? '' : 'skeleton' }`}><Image src='/img/Juice - Koszyk.jpg' alt="Juice - Koszyk" width={1050} height={2052} className="rounded" onLoadingComplete={handleImageLoaded}/></div>
     <p className="mb-4 font-light">
       Jednym z elementów jest konfigurator soków, stanowiący istotny element witryny. Ten interaktywny moduł umożliwia użytkownikom samodzielne komponowanie swoich unikalnych soków, dostosowanych do indywidualnych upodobań i potrzeb. To właśnie ta funkcjonalność wyraża zaangażowanie projektu w kreowanie personalizowanych doświadczeń zakupowych.
     </p>
