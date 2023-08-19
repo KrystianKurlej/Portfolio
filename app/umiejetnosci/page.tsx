@@ -40,7 +40,7 @@ const Page = () => {
         <span className="px-4 text-neutral-500">Inne</span>
         <div className="p-4 rounded-lg border border-neutral-600 mb-2">
             <ul>
-              <li className="pb-1 font-light text-neutral-200 text-sm">Zrozumienie pracy z publicznymi i niestandardowymi systemami CMS</li>
+              <li className="pb-1 font-light text-neutral-200 text-sm">Rozumienie pracy z publicznymi i niestandardowymi systemami CMS</li>
               <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Biegłość w systemach zarządzania projektami, takich jak Trello</li>
               <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Znajomość narzędzi do monitorowania stron (Google Tag Manager, Google Analytics)</li>
               <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Silne umiejętności pracy z Google Suite / Microsoft Office</li>

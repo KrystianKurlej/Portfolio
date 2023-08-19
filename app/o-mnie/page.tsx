@@ -20,7 +20,7 @@ const Page = () => {
         </div>
         <div>
             <h1 className="text-4xl mb-4">O mnie</h1>
-            <p className="font-light">Jestem doświadczonym grafikiem ze specjalizacją w UI i UX. Tworzę interfejsy, animacje i gotowe do druku grafiki. Ponadto dążę do ciągłego rozwoju w obszarze programowania front-endowego.</p>
+            <p className="font-light">Jestem doświadczonym grafikiem specjalizującym się w UI i UX. Tworzę interfejsy, animacje i gotowe do druku grafiki. Ponadto dążę do ciągłego rozwoju w obszarze programowania front-endowego.</p>
         </div>
     </header>
     <section id="experience">
