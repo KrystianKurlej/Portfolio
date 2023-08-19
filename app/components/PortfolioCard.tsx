@@ -21,7 +21,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({title, slug}) => {
       <div className={`${imageLoaded ?
       '' : 'skeleton'
       }`}>
-        <Image className="rounded-lg" src={`/img/Cover - ${title}.jpg`} alt="AlumiDrop" width={825} height={344} onLoadingComplete={handleImageLoaded}/>
+        <Image className="rounded-lg w-full" src={`/img/Cover - ${title}.jpg`} alt="AlumiDrop" width={825} height={344} onLoadingComplete={handleImageLoaded}/>
       </div>
     </Link>
   );
