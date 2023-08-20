@@ -26,7 +26,7 @@ const Page = () => {
     <section id="experience">
         <span className="px-4 text-neutral-500">Doświadczenie</span>
         <div className="p-4 rounded-lg border border-neutral-600 mb-2">
-            <div className="flex w-full justify-between items-center mb-1">
+            <div className="flex flex-col-reverse min-[375px]:flex-row min-[375px]:justify-between w-full mb-1">
                 <p className="font-light">Agencja Interaktywna</p>
                 <p className="font-light">03.2021 - Teraz</p>
             </div>
@@ -44,7 +44,7 @@ const Page = () => {
             </ul>
         </div>
         <div className="p-4 rounded-lg border border-neutral-600 mb-2">
-            <div className="flex w-full justify-between items-center mb-1">
+            <div className="flex flex-col-reverse min-[375px]:flex-row min-[375px]:justify-between w-full mb-1">
                 <p className="font-light">Centrum Kształcenia</p>
                 <p className="font-light">01.2018 - 09.2018</p>
             </div>
@@ -60,7 +60,7 @@ const Page = () => {
     <section id="education" className="mt-8">
         <span className="px-4 text-neutral-500">Edukacja</span>
         <div className="p-4 rounded-lg border border-neutral-600 mb-2">
-            <div className="flex w-full justify-between items-center mb-1">
+            <div className="flex flex-col-reverse min-[375px]:flex-row min-[375px]:justify-between w-full mb-1">
                 <p className="font-light">Licencjat</p>
                 <p className="font-light">10.2020 - 09.2023</p>
             </div>

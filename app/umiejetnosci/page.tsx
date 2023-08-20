@@ -1,6 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import Button from "../components/Button";
+import GraphicDesignIcons from "./GraphicDesignIcons";
+import DevelopmentIcons from "./DevelopmentIcons";
+import Software from "./Software";
 
 const Page = () => {
   return (
@@ -11,14 +14,17 @@ const Page = () => {
     <section id="graphicDesign">
         <span className="px-4 text-neutral-500">Graphic Design</span>
         <div className="p-4 rounded-lg border border-neutral-600 mb-2">
-            <ul>
-                <li className="pb-1 font-light text-neutral-200 text-sm">Biegła znajomość pełnego pakietu Adobe Creative Cloud</li>
-                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Projektowanie interfejsu użytkownika (UI/UX) oraz tworzenie prototypów</li>
-                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Animacja 2D</li>
-                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Wizualizacje i animacje 3D</li>
-                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Montaż wideo</li>
-                <li className="pt-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Tworzenie grafik przystosowanych do druku (DTP)</li>
-            </ul>
+          <ul>
+              <li className="pb-1 font-light text-neutral-200 text-sm">Biegła znajomość pełnego pakietu Adobe Creative Cloud</li>
+              <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Projektowanie interfejsu użytkownika (UI/UX) oraz tworzenie prototypów</li>
+              <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Animacja 2D</li>
+              <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Wizualizacje i animacje 3D</li>
+              <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Montaż wideo</li>
+              <li className="pt-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Tworzenie grafik przystosowanych do druku (DTP)</li>
+          </ul>
+        </div>
+        <div className="px-4 py-2 rounded-lg border border-neutral-600 mb-2">
+          <Software />
         </div>
         <div className="px-4"><Button label="Behance" link="https://www.behance.net/krystiankurlej" linkTitle="Behance" /></div>
     </section>
@@ -27,7 +33,7 @@ const Page = () => {
         <div className="p-4 rounded-lg border border-neutral-600 mb-2">
             <ul>
               <li className="pb-1 font-light text-neutral-200 text-sm">HTML, CSS, JavaScript</li>
-              <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">SCSS, Bootstrap</li>
+              <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">SCSS, Bootstrap, Tailwind CSS</li>
               <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Git</li>
               <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Kodowanie motywów WordPress z integracją wtyczek</li>
               <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Analizowanie i poprawa stron z PageSpeed Insights</li>
