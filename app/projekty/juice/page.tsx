@@ -21,6 +21,7 @@ const Page = () => {
         <Button label="Strona www" link="https://juice-bay.vercel.app/" linkTitle="Juice. - Strona www" />
       </div>
     </header>
+    <div className={`rounded my-8 ${imageLoaded ? '' : 'skeleton' }`}><Image src='/img/Juice - Header.jpg' alt="Juice - Header" width={1050} height={725} className="rounded" onLoadingComplete={handleImageLoaded}/></div>
     <p className="mb-4 font-light">
       Juice. to projekt platformy e-commerce, dedykowanej sprzedaży zdrowych soków o różnorodnych korzyściach dla zdrowia. W tym projekcie unikam konwencjonalnego akcentowania naturalności produktów, a skupiam się na wprowadzeniu nowoczesnej wizji handlu sokami.
     </p>
