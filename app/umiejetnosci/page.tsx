@@ -1,8 +1,5 @@
-import Image from "next/image";
 import React from "react";
 import Button from "../components/Button";
-import GraphicDesignIcons from "./GraphicDesignIcons";
-import DevelopmentIcons from "./DevelopmentIcons";
 import Software from "./Software";
 
 const Page = () => {
