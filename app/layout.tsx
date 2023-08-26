@@ -24,9 +24,9 @@ export default function RootLayout({
   return (
     <html lang="pl">
       {/* Hotjar Tracking Code */}
-      <Script strategy="beforeInteractive" src={`https://static.hotjar.com/c/hotjar-${process.env.NEXT_PUBLIC_HJ_ID}.js?sv=6`} />
+      <Script strategy="beforeInteractive" src={`https://static.hotjar.com/c/hotjar-3629146.js?sv=6`} />
       {/* Google tag (gtag.js) */}
-      <Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`} />
+      <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-VKGYSJX0W1`} />
       <Script id="google-analytics-script">
         {`
         window.dataLayer = window.dataLayer || [];
