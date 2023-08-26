@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import Footer from './components/Footer';
 import Script from 'next/script';
+import Hotjar from '@hotjar/browser';
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -21,10 +22,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const siteId = 3629146;
+  const hotjarVersion = 6;
+
+  Hotjar.init(siteId, hotjarVersion);
+
   return (
     <html lang="pl">
-      {/* Hotjar Tracking Code */}
-      <Script strategy="beforeInteractive" src={`https://static.hotjar.com/c/hotjar-3629146.js?sv=6`} />
       {/* Google tag (gtag.js) */}
       <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-VKGYSJX0W1`} />
       <Script id="google-analytics-script">
@@ -33,7 +37,7 @@ export default function RootLayout({
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+        gtag('config', 'G-VKGYSJX0W1');
         `}
       </Script>
       <body className={poppins.className + ` bg-[#020202] text-white`}>
