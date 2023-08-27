@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { useEffect } from 'react';
 import { Poppins } from 'next/font/google'
 import Footer from './components/Footer';
 import Script from 'next/script';
@@ -22,10 +23,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const siteId = 3629146;
-  const hotjarVersion = 6;
+ useEffect(() => {
+    const siteId = 3629146;
+    const hotjarVersion = 6;
 
-  Hotjar.init(siteId, hotjarVersion);
+    Hotjar.init(siteId, hotjarVersion);
+  }, []);
 
   return (
     <html lang="pl">
