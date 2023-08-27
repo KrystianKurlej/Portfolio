@@ -1,12 +1,9 @@
-'use client'
-
 import './globals.css'
 import type { Metadata } from 'next'
-import { useEffect } from 'react';
 import { Poppins } from 'next/font/google'
 import Footer from './components/Footer';
-import Script from 'next/script';
-import Hotjar from '@hotjar/browser';
+import { HotjarInit } from './utils/HotjarInit';
+import { GoogleAnalyticsInit } from './utils/GoogleAnalyticsInit';
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -25,26 +22,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
- useEffect(() => {
-    const siteId = 3629146;
-    const hotjarVersion = 6;
-
-    Hotjar.init(siteId, hotjarVersion);
-  }, []);
-
   return (
     <html lang="pl">
-      {/* Google tag (gtag.js) */}
-      <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-VKGYSJX0W1`} />
-      <Script id="google-analytics-script">
-        {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-VKGYSJX0W1');
-        `}
-      </Script>
+      <HotjarInit />
+      <GoogleAnalyticsInit />
       <body className={poppins.className + ` bg-[#020202] text-white`}>
         {children}
         <Footer />
