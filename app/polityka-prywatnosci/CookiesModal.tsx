@@ -13,7 +13,7 @@ const CookiesModal = () => {
 
   return (
     <div 
-        className="bg-[#020202] w-full fixed bottom-0 right-0 p-4 shadow-xl border-t border-neutral-500 z-50
+        className="bg-[#020202] w-full fixed bottom-0 right-0 p-4 shadow-xl border-t border-neutral-500 z-30
         md:w-96 md:rounded-lg md:border md:m-5"
     >
         <h2 className="text-xl">Pliki cookies</h2>

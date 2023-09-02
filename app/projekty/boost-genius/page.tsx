@@ -32,8 +32,8 @@ const Page = () => {
       <Image src='/img/BoostGenius - Figma.jpg' alt="BoostGenius - Figma"width={1000} height={368} className="absolute top-0 w-full h-full object-cover -z-10" />
     </div>
     {showModal &&
-      <div onClick={handleShowModal} className="fixed fixed-center bg-neutral-500/[0.2] w-full h-full">
-        <div className={iframeLoaded ? 'lds-ring opacity-0 z-20' : 'lds-ring opacity-100 z-20'}><div></div><div></div><div></div><div></div></div>
+      <div onClick={handleShowModal} className="fixed fixed-center bg-neutral-500/[0.2] w-full h-full z-40">
+        <div className={iframeLoaded ? 'lds-ring opacity-0 z-50' : 'lds-ring opacity-100 z-50'}><div></div><div></div><div></div><div></div></div>
         <Modal>
           <iframe onLoad={handleIframeLoaded} className={iframeLoaded ? 'w-full rounded opacity-100' : 'w-full rounded opacity-0'} width="800" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F6CBZMSfsUwCXV6GodEUfCo%2FBoost-Genius%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DTM4vxJiYSBGADbMb-1"></iframe>
           <button onClick={handleShowModal} className="absolute -bottom-12 left-[50%] translate-x-[-50%] bg-[#020202] sm:w-fit px-4 h-10 flex items-center gap-2 bg-8 rounded-lg border border-neutral-500 hover:border-neutral-50 duration-150 text-sm">Zamknij</button>
