@@ -4,6 +4,7 @@ import { Poppins } from 'next/font/google'
 import Footer from './components/Footer';
 import { HotjarInit } from './utils/HotjarInit';
 import { GoogleAnalyticsInit } from './utils/GoogleAnalyticsInit';
+import CookiesModal from './polityka-prywatnosci/CookiesModal';
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -27,6 +28,7 @@ export default function RootLayout({
       <HotjarInit />
       <GoogleAnalyticsInit />
       <body className={poppins.className + ` bg-[#020202] text-white`}>
+        <CookiesModal />
         {children}
         <Footer />
       </body>

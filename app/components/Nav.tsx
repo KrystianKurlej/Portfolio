@@ -5,7 +5,7 @@ import React, {useState} from "react";
 import Image from "next/image";
 
 interface NavProps {
-    currentPage: 'Portfolio' | 'O mnie' | 'Umiejętności';
+    currentPage?: 'Portfolio' | 'O mnie' | 'Umiejętności';
 }
 
 const Nav: React.FC<NavProps> = ({currentPage}) => {
