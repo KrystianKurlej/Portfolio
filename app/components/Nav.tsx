@@ -38,8 +38,8 @@ const Nav: React.FC<NavProps> = ({currentPage}) => {
       }, []);
 
   return (
-    <nav className={`nav sticky top-0 bg-[#020202] max-w-[1800px] px-4 mx-auto flex items-center justify-between ${isScrolled ? "active" : ""}`}>
-        <div className="menu-btn sm:hidden z-10" onClick={handleMenuChange}>
+    <nav className={`nav z-30 sticky top-0 bg-[#020202] max-w-[1800px] px-4 mx-auto flex items-center justify-between ${isScrolled ? "active" : ""}`}>
+        <div className="menu-btn sm:hidden z-40" onClick={handleMenuChange}>
             <div className={`hamburger-ico ${isMenuOpen ? 'active': ''}`}></div>
         </div>
         <div className={`
