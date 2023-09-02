@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link";
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Image from "next/image";
 
 interface NavProps {
@@ -10,6 +10,7 @@ interface NavProps {
 
 const Nav: React.FC<NavProps> = ({currentPage}) => {
     const [isMenuOpen, setMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const handleMenuChange = () => {
         setMenuOpen(!isMenuOpen);
@@ -19,25 +20,42 @@ const Nav: React.FC<NavProps> = ({currentPage}) => {
         setMenuOpen(false);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+          const scrollTop = window.scrollY;
+          if (scrollTop > 0) {
+            setIsScrolled(true);
+          } else {
+            setIsScrolled(false);
+          }
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
+
   return (
-    <nav className="max-w-[1800px] px-4 mx-auto h-24 flex items-center justify-between">
+    <nav className={`nav sticky top-0 bg-[#020202] max-w-[1800px] px-4 mx-auto flex items-center justify-between ${isScrolled ? "active" : ""}`}>
         <div className="menu-btn sm:hidden z-10" onClick={handleMenuChange}>
             <div className={`hamburger-ico ${isMenuOpen ? 'active': ''}`}></div>
         </div>
         <div className={`
         absolute bg-[#020202] top-0 w-full h-[100svh] py-28 px-10 text-3xl duration-300
         ${isMenuOpen ? 'left-0 opacity-100' : 'left-[-100%] opacity-50'}
-        sm:h-24 sm:static sm:text-base sm:opacity-100 sm:flex sm:items-center sm:justify-between sm:py-0 sm:px-4
+        sm:h-full sm:static sm:text-base sm:opacity-100 sm:flex sm:items-center sm:justify-between sm:py-0 sm:px-4
         `}>
             <ul className="sm:flex gap-5 items-center">
                 <Link onClick={handleCloseMenu} className={currentPage === 'Portfolio' ? 'opacity-100' : 'opacity-70 hover:opacity-100 duration-150'} href="/">
-                    <li className="mb-4">Portfolio</li>
+                    <li className="mb-4 md:mb-0">Portfolio</li>
                 </Link>
                 <Link onClick={handleCloseMenu} className={currentPage === 'O mnie' ? 'opacity-100' : 'opacity-70 hover:opacity-100 duration-150'} href="/o-mnie/">
-                    <li className="mb-4">O mnie</li>
+                    <li className="mb-4 md:mb-0">O mnie</li>
                 </Link>
                 <Link onClick={handleCloseMenu} className={currentPage === 'Umiejętności' ? 'opacity-100' : 'opacity-70 hover:opacity-100 duration-150'} href="/umiejetnosci/">
-                    <li className="mb-4">Umiejętności</li>
+                    <li className="mb-4 md:mb-0">Umiejętności</li>
                 </Link>
             </ul>
             <ul className="mt-10 sm:mt-0 flex gap-5 items-center">

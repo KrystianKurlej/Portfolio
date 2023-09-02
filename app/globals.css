@@ -1,6 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.nav {
+  height: 6rem;
+}
+.nav, .nav::after {
+  transition-duration: 300ms;
+}
+.nav::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(229, 229, 229);
+  width: 0%;
+  height: 1px;
+  z-index: 5;
+}
+.nav.active {
+  height: 4rem;
+}
+.nav.active::after {
+  width: 100%;
+}
+
 .menu-btn {
   margin: 1em;
   width: 21px;
