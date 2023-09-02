@@ -34,7 +34,7 @@ const Page = () => {
     <div className={`rounded my-8 ${imageLoaded ? '' : 'skeleton' }`}><Image src='/img/SmoothFlow CMS - Mockup.jpg' alt="SmoothFlow CMS - Mockup" width={1050} height={701} className="rounded" onLoadingComplete={handleImageLoaded}/></div>
     <div className="w-full my-8 p-8 rounded-lg flex flex-col gap-4 items-center text-2xl border border-neutral-500 relative">
       Projekt w figmie <button onClick={handleShowModal} className=" bg-[#020202] px-4 h-10 flex items-center gap-2 bg-8 rounded-lg border border-neutral-500 hover:border-neutral-50 duration-150 text-sm">Otwórz pop-up</button>
-      <Image src='/img/SmoothFlow CMS - Figma.jpg' alt="SmoothFlow CMS - Figma" width={1360} height={500} className="absolute top-0 w-full h-full object-cover -z-10" />
+      <Image src='/img/SmoothFlow CMS - Figma.jpg' alt="SmoothFlow CMS - Figma" width={1000} height={368} className="absolute top-0 w-full h-full object-cover -z-10" />
     </div>
     {showModal &&
       <div onClick={handleShowModal} className="fixed fixed-center bg-neutral-500/[0.2] w-full h-full">
