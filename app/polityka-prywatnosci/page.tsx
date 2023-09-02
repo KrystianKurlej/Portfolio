@@ -52,7 +52,7 @@ const PrivacyPolicy = () => {
       <ol className="list-decimal pl-6 font-light text-neutral-200 leading-6">
         <li className="mt-1">Użytkownik może samodzielnie i w dowolnym momencie dokonać zmiany w ustawieniach dotyczących dostępu do danych Plików Cookies oraz ich zapisywania i usuwania.</li>
         <li className="mt-1">Użytkownik ma możliwość skasowania wszystkich zapisywanych do tej pory Plików Cookies ze swojego Urządzenia.</li>
-        <li className="mt-1">Informacje na temat możliwości wyłączenia gromadzenia Plików Cookies można znaleźć pod adresem: <Link className="text-white font-regular underline" href='https://jakwylaczyccookie.pl/jak-wylaczyc-pliki-cookies/'>https://jakwylaczyccookie.pl/jak-wylaczyc-pliki-cookies/</Link></li>
+        <li className="mt-1">Informacje na temat możliwości wyłączenia gromadzenia Plików Cookies można znaleźć pod adresem: <Link target="_blank" className="text-white font-regular underline" href='https://jakwylaczyccookie.pl/jak-wylaczyc-pliki-cookies/'>https://jakwylaczyccookie.pl/jak-wylaczyc-pliki-cookies/</Link></li>
       </ol>
 
       <h4 className="mt-10 mb-4 text-2xl">7. Wymagania serwisu</h4>
