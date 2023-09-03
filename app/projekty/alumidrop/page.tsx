@@ -32,7 +32,7 @@ const Page = () => {
       <Image src='/img/AlumiDrop - Figma.jpg' alt="AlumiDrop - Figma" width={1000} height={368} className="absolute top-0 w-full h-full object-cover -z-10" />
     </div>
     {showModal &&
-      <div onClick={handleShowModal} className="fixed fixed-center bg-neutral-500/[0.2] w-full h-full z-40">
+      <div onClick={handleShowModal} className="fixed fixed-center bg-neutral-500/[0.2] w-full h-[100svh] z-40">
         <div className={iframeLoaded ? 'lds-ring opacity-0 z-50' : 'lds-ring opacity-100 z-50'}><div></div><div></div><div></div><div></div></div>
         <Modal>
           <iframe onLoad={handleIframeLoaded} className={iframeLoaded ? 'w-full rounded opacity-100' : 'w-full rounded opacity-0'} width="800" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F8pinz7GYpjWfDDATur0WBZ%2FAlumiDrop%3Ftype%3Ddesign%26node-id%3D808%253A151%26mode%3Ddesign%26t%3DcuGs5I0qNqUANSTv-1"></iframe>
