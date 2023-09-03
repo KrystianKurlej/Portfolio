@@ -47,9 +47,14 @@ const Page = () => {
       </div>
     }
     <p className="mb-4 font-light">Juice. to projekt platformy e-commerce, dedykowanej sprzedaży zdrowych soków o różnorodnych korzyściach dla zdrowia. W tym projekcie unikam konwencjonalnego akcentowania naturalności produktów, a skupiam się na wprowadzeniu nowoczesnej wizji handlu sokami.</p>
+    <div className={`rounded my-8 ${imageLoaded ? '' : 'skeleton' }`}><Image src='/img/Juice - Sklep.jpg' alt="Juice - Sklep" width={1050} height={548} className="rounded" onLoadingComplete={handleImageLoaded}/></div>
     <p className="mb-4 font-light">Podejście do samego procesu zakupu musiało być nieco inne niż w standardowych projektach platform e-commerce. Specyfika produktu sprawia, że użytkownik nie powinien odczuwać, że proces jest zbyt długi, zachowując przy tym dodatkowe możliwości takie jak odejmowanie składników od gotowego produktu.</p>
     <div className={`rounded my-8 ${imageLoaded ? '' : 'skeleton' }`}><Image src='/img/Juice - Koszyk.jpg' alt="Juice - Koszyk" width={1050} height={2052} className="rounded" onLoadingComplete={handleImageLoaded}/></div>
     <p className="mb-4 font-light">Jednym z elementów jest konfigurator soków, stanowiący istotny element witryny. Ten interaktywny moduł umożliwia użytkownikom samodzielne komponowanie swoich unikalnych soków, dostosowanych do indywidualnych upodobań i potrzeb. To właśnie ta funkcjonalność wyraża zaangażowanie projektu w kreowanie personalizowanych doświadczeń zakupowych.</p>
+    <div className={`rounded mt-8 mb-2 ${imageLoaded ? '' : 'skeleton' }`}><Image src='/img/Juice - Konfigurator1.jpg' alt="Juice - Konfigurator1" width={1660} height={628} className="rounded" onLoadingComplete={handleImageLoaded}/></div>
+    <div className={`rounded my-2 ${imageLoaded ? '' : 'skeleton' }`}><Image src='/img/Juice - Konfigurator2.jpg' alt="Juice - Konfigurator2" width={1660} height={628} className="rounded" onLoadingComplete={handleImageLoaded}/></div>
+    <div className={`rounded my-2 ${imageLoaded ? '' : 'skeleton' }`}><Image src='/img/Juice - Konfigurator3.jpg' alt="Juice - Konfigurator3" width={1660} height={628} className="rounded" onLoadingComplete={handleImageLoaded}/></div>
+    <div className={`rounded mb-8 mt-2 ${imageLoaded ? '' : 'skeleton' }`}><Image src='/img/Juice - Konfigurator4.jpg' alt="Juice - Konfigurator4" width={1660} height={628} className="rounded" onLoadingComplete={handleImageLoaded}/></div>
     <p className="mb-4 font-light">Projekt dodatkowo realizuję używając Next.js i służy mi on jako obecna baza do rozwoju <Link className="underline font-normal" href='/projekty/smoothflow-cms/' title="SmoothFlow CMS">autorskiego systemu CMS</Link>.</p>
     <div className="mt-8 flex gap-2 w-full sm:w-fit">
       <Button label="Github" link="https://github.com/KrystianKurlej/juice" linkTitle="Juice. - Github" />
