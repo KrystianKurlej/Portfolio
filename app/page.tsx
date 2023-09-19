@@ -2,11 +2,13 @@ import React from "react";
 import PortfolioCard from "./components/PortfolioCard";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import CookiesModal from "./polityka-prywatnosci/CookiesModal";
 
 const Page = () => {
   return (
     <>
     <Nav currentPage="Portfolio" lang="PL"/>
+    <CookiesModal />
     <main className="max-w-[1800px] px-2.5 mx-auto grid md:grid-cols-2 gap-3">
       <PortfolioCard commercial={false} lang="PL" title="Juice" slug="juice" />
       <PortfolioCard commercial={false} lang="PL" title="SmoothFlow CMS" slug="smoothflow-cms" />
