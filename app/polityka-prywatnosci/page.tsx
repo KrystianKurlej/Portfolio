@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const PrivacyPolicy = () => {
   return (
     <>
-    <Nav />
+    <Nav lang="PL" />
     <header className="max-w-[700px] w-full px-2.5 mx-auto mt-12 mb-6">
       <h1 className="text-4xl mb-4 sm:mb-0">Polityka prywatności</h1>
       <p className="mt-6 font-light text-neutral-200 leading-6">Niniejsza Polityka Prywatności zawiera zasady przechowywania i zapisywania danych na Urządzeniach Użytkowników, przez Serwis funkcjonujący pod adresem <Link className="text-white font-regular underline" href='https://portfolio-eta-nine-50.vercel.app/'>https://portfolio-eta-nine-50.vercel.app/</Link>. Strona Portfolio Krystiana Kurlej - gromadzone dane mają na celu udostępnianie prac przez Administratora Serwisu poprzez drogę elektroniczną.</p>
@@ -76,6 +77,7 @@ const PrivacyPolicy = () => {
       Wróć do przeglądania portfolio
       </Link>
     </div>
+    <Footer lang="PL" />
     </>
   );
 };

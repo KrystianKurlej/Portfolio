@@ -1,5 +1,5 @@
-import Footer from "../components/Footer"
-import Nav from "../components/Nav"
+import Footer from "@/app/components/Footer"
+import Nav from "../../components/Nav"
 
 export default function Layout({
     children,
@@ -8,9 +8,9 @@ export default function Layout({
   }) {
     return (
         <>
-        <Nav currentPage="Umiejętności" lang="PL"/>
+        <Nav currentPage="Umiejętności" lang="EN"/>
         <main className="max-w-[700px] px-2.5 py-5 mx-auto">{children}</main>
-        <Footer lang="PL" />
+        <Footer lang="EN" />
         </>
     )
   }

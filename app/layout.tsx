@@ -30,7 +30,6 @@ export default function RootLayout({
       <body className={poppins.className + ` bg-[#020202] text-white`}>
         <CookiesModal />
         {children}
-        <Footer />
       </body>
     </html>
   )
