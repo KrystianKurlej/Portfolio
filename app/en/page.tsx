@@ -9,9 +9,7 @@ const Page = () => {
     <Nav currentPage="Portfolio" lang="EN"/>
     <main className="max-w-[1800px] px-2.5 mx-auto grid md:grid-cols-2 gap-3">
       <PortfolioCard commercial={false} lang="EN" title="Juice" slug="juice" />
-      <PortfolioCard commercial={false} lang="EN" title="SmoothFlow CMS" slug="smoothflow-cms" />
       <PortfolioCard commercial={true} lang="EN" title="Karnatech" slug="karnatech" />
-      <PortfolioCard commercial={true} lang="EN" title="Boost Genius" slug="boost-genius" />
       <PortfolioCard commercial={false} lang="EN" title="AlumiDrop" slug="alumidrop" />
     </main>
     <Footer lang="EN" />
