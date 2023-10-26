@@ -21,17 +21,17 @@ const Page = () => {
         </div>
         <div>
             <h1 className="text-4xl mb-4">O mnie</h1>
-            <p className="font-light">Jestem doświadczonym grafikiem specjalizującym się w UI i UX. Tworzę interfejsy, animacje i gotowe do druku grafiki. Ponadto dążę do ciągłego rozwoju w obszarze programowania front-endowego.</p>
+            <p className="font-light">Jestem studentem informatyki stosowanej oraz pracuję jako Graphic Designer w agencji interaktywnej, gdzie głównie skupiam się na UI/UX designie. Moją pasją jest Web Development, zwłaszcza front-end.</p>
         </div>
     </header>
     <section id="experience">
         <span className="px-4 text-neutral-500">Doświadczenie</span>
         <div className="p-4 rounded-lg border border-neutral-600 mb-2">
             <div className="flex flex-col-reverse min-[375px]:flex-row min-[375px]:justify-between w-full mb-1">
-                <p className="font-light">Agencja Interaktywna</p>
+                <p className="font-light">Agencja Interaktywna Argonium</p>
                 <p className="font-light">03.2021 - Teraz</p>
             </div>
-            <h2 className="text-3xl font-medium">Argonium</h2>
+            <h2 className="text-3xl font-medium">Graphic Designer</h2>
             <ul className="mt-4">
                 <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Projektowanie UX/UI</li>
                 <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">DTP</li>
@@ -46,10 +46,10 @@ const Page = () => {
         </div>
         <div className="p-4 rounded-lg border border-neutral-600 mb-2">
             <div className="flex flex-col-reverse min-[375px]:flex-row min-[375px]:justify-between w-full mb-1">
-                <p className="font-light">Centrum Kształcenia</p>
+                <p className="font-light">Centrum Kształcenia Torus</p>
                 <p className="font-light">01.2018 - 09.2018</p>
             </div>
-            <h2 className="text-3xl font-medium">Torus</h2>
+            <h2 className="text-3xl font-medium">Graphic Designer</h2>
             <ul className="mt-4">
                 <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">DTP</li>
                 <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Grafiki do mediów społecznościowych</li>
@@ -60,6 +60,16 @@ const Page = () => {
     </section>
     <section id="education" className="mt-8">
         <span className="px-4 text-neutral-500">Edukacja</span>
+        <div className="p-4 rounded-lg border border-neutral-600 mb-2">
+            <div className="flex flex-col-reverse min-[375px]:flex-row min-[375px]:justify-between w-full mb-1">
+                <p className="font-light">Magister</p>
+                <p className="font-light">10.2023 - Teraz</p>
+            </div>
+            <h2 className="text-xl font-medium">Uniwersytet Ekonomiczny w Krakowie</h2>
+            <ul className="mt-4">
+                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Informatyka stosowana</li>
+            </ul>
+        </div>
         <div className="p-4 rounded-lg border border-neutral-600 mb-2">
             <div className="flex flex-col-reverse min-[375px]:flex-row min-[375px]:justify-between w-full mb-1">
                 <p className="font-light">Licencjat</p>

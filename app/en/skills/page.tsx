@@ -9,7 +9,21 @@ const Page = () => {
     <header className="py-5 px-4 mb-8">
       <h1 className="text-4xl">Skills</h1>
     </header>
-    <section id="graphicDesign">
+    <section id="development">
+        <span className="px-4 text-neutral-500">Development</span>
+        <div className="p-4 rounded-lg border border-neutral-600 mb-2">
+            <ul>
+                <li className="pb-1 font-light text-neutral-200 text-sm">HTML, CSS, JavaScript</li>
+                <li className="pt-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">knowledge of React.js, Next.js</li>
+                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">SCSS, Bootstrap, Tailwind CSS</li>
+                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Git version control</li>
+                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">WordPress theme development with plugin integration</li>
+                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Analyzing and improving sites with PageSpeed Insights</li>
+            </ul>
+        </div>
+        <div className="px-4"><Button label="Github" link="https://github.com/KrystianKurlej" linkTitle="Github" /></div>
+    </section>
+    <section id="graphicDesign" className="mt-8">
         <span className="px-4 text-neutral-500">Graphic Design</span>
         <div className="p-4 rounded-lg border border-neutral-600 mb-2">
           <ul>
@@ -26,20 +40,6 @@ const Page = () => {
         </div>
         <div className="px-4"><Button label="Behance" link="https://www.behance.net/krystiankurlej" linkTitle="Behance" /></div>
     </section>
-    <section id="development" className="mt-8">
-        <span className="px-4 text-neutral-500">Development</span>
-        <div className="p-4 rounded-lg border border-neutral-600 mb-2">
-            <ul>
-                <li className="pb-1 font-light text-neutral-200 text-sm">HTML, CSS, JavaScript</li>
-                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">SCSS, Bootstrap, Tailwind CSS</li>
-                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Git</li>
-                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">WordPress theme development with plugin integration</li>
-                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Analyzing and improving sites with PageSpeed Insights</li>
-                <li className="pt-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Basic knowledge of React.js, Next.js</li>
-            </ul>
-        </div>
-        <div className="px-4"><Button label="Github" link="https://github.com/KrystianKurlej" linkTitle="Github" /></div>
-    </section>
     <section id="inne" className="mt-8">
         <span className="px-4 text-neutral-500">Other</span>
         <div className="p-4 rounded-lg border border-neutral-600 mb-2">
@@ -49,8 +49,6 @@ const Page = () => {
                 <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Familiarity with website monitoring tools (Google Tag Manager, Google Analytics)</li>
                 <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Strong skills in working with Google Suite / Microsoft Office</li>
                 <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Ability to optimize work on tight deadline projects</li>
-                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Collaboration with front-end and back-end developers</li>
-                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Capability to work on multiple projects simultaneously</li>
                 <li className="pt-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">English language proficiency at B2 level</li>
             </ul>
         </div>
