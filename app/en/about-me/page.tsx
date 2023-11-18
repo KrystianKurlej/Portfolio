@@ -62,7 +62,7 @@ const Page = () => {
         <span className="px-4 text-neutral-500">Education</span>
         <div className="p-4 rounded-lg border border-neutral-600 mb-2">
             <div className="flex flex-col-reverse min-[375px]:flex-row min-[375px]:justify-between w-full mb-1">
-                <p className="font-light">Master's degree</p>
+                <p className="font-light">Master&apos;s degree</p>
                 <p className="font-light">10.2020 - 09.2023</p>
             </div>
             <h2 className="text-xl font-medium">Krakow Univesity of Economics</h2>
