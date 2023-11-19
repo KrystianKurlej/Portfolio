@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../../components/Button";
-import Software from "@/app/umiejetnosci/Software";
 import Link from "next/link";
 
 const Page = () => {
@@ -18,7 +17,6 @@ const Page = () => {
                 <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">SCSS, Bootstrap, Tailwind CSS</li>
                 <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Git version control</li>
                 <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">WordPress theme development with plugin integration</li>
-                <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Analyzing and improving sites with PageSpeed Insights</li>
             </ul>
         </div>
         <div className="px-4"><Button label="Github" link="https://github.com/KrystianKurlej" linkTitle="Github" /></div>
@@ -34,9 +32,6 @@ const Page = () => {
             <li className="py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Video Editing</li>
             <li className="pt-1 border-t border-neutral-700 font-light text-neutral-200 text-sm">Creating graphics suitable for print (DTP)</li>
           </ul>
-        </div>
-        <div className="px-4 py-2 rounded-lg border border-neutral-600 mb-2">
-          <Software />
         </div>
         <div className="px-4"><Button label="Behance" link="https://www.behance.net/krystiankurlej" linkTitle="Behance" /></div>
     </section>
