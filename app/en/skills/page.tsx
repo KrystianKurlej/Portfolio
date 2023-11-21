@@ -15,7 +15,7 @@ const Page = () => {
       linkLabel="Github"
       link="https://github.com/KrystianKurlej"
     >
-      <List className="mt-0">
+      <List>
         <ListItem text="HTML, CSS, JavaScript" className="border-none pt-0"/>
         <ListItem text="Knowledge of React.js, Next.js" />
         <ListItem text="SCSS, Bootstrap, Tailwind CSS" />
@@ -30,7 +30,7 @@ const Page = () => {
       linkLabel="Behance"
       link="https://www.behance.net/krystiankurlej"
     >
-      <List className="mt-0">
+      <List>
         <ListItem text="Fluent knowledge of the full Adobe Creative Cloud suite" className="border-none pt-0"/>
         <ListItem text="User Interface (UI/UX) design and prototyping" />
         <ListItem text="2D Animation" />
@@ -46,7 +46,7 @@ const Page = () => {
       linkLabel="LinkedIn"
       link="https://www.linkedin.com/in/krystian-kurlej-0ba001232/"
     >
-      <List className="mt-0">
+      <List>
         <ListItem text="Understanding how to work with public and custom CMS systems" className="border-none pt-0"/>
         <ListItem text="Proficiency in project management systems like Trello" />
         <ListItem text="Familiarity with website monitoring tools (Google Tag Manager, Google Analytics)" />

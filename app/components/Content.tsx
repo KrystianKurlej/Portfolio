@@ -269,11 +269,11 @@ export const List: React.FC<ListProps> = ({
             </div>
         }
         {title &&
-            <h2 className="text-3xl font-medium">
+            <h2 className="text-3xl font-medium mb-4">
                 {title}
             </h2>
         }
-        <ul className={`mt-4 ${className}`}>
+        <ul className={className}>
             {children}
         </ul>
     </div>
