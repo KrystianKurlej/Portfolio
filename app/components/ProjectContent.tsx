@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Button from "./Button";
-import { ArrowRight } from "./icons";
+import { ArrowTopRight, Close, Popup } from "./icons";
 import Modal from "./Modal";
 
 interface HeaderProps {
@@ -29,7 +29,7 @@ export const Header: React.FC<HeaderProps> = ({
                 label="Github"
                 link={githubUrl}
                 linkTitle={`${title} - Github`}
-                icon={<ArrowRight />}
+                icon={<ArrowTopRight />}
                 iconPlacement="right"
                 className="w-full sm:w-fit"
             />
@@ -39,7 +39,7 @@ export const Header: React.FC<HeaderProps> = ({
                 label={(lang === 'pl') ? 'Strona www' : 'Website'}
                 link={websiteUrl}
                 linkTitle={`${title} - ${(lang === 'pl') ? 'Strona www' : 'Website'}`}
-                icon={<ArrowRight />}
+                icon={<ArrowTopRight />}
                 iconPlacement="right"
                 className="w-full sm:w-fit"
             />
@@ -81,6 +81,8 @@ export const FigmaModal: React.FC<FigmaModalProps> = ({
             <Button
                 label={(lang === 'pl') ? 'Otwórz pop-up' : 'Open project'}
                 onClick={handleShowModal}
+                iconPlacement="right"
+                icon={<Popup />}
             />
             <Image
                 src={bgImgUrl}
@@ -106,6 +108,8 @@ export const FigmaModal: React.FC<FigmaModalProps> = ({
                     label={(lang === 'pl') ? 'Zamknij' : 'Close'}
                     className="absolute -bottom-12 left-[50%] translate-x-[-50%]"
                     onClick={handleShowModal}
+                    iconPlacement="right"
+                    icon={<Close />}
                 />
                 </Modal>
             </div>
@@ -133,11 +137,17 @@ export const ProjectFooter: React.FC<ProjectFooterProps> = ({
             label="Github"
             link={githubUrl}
             linkTitle={`${title} - Github`}
+            className="w-full sm:w-fit"
+            iconPlacement="right"
+            icon={<ArrowTopRight />}
         />
         <Button
             label={(lang === 'pl') ? 'Strona www' : 'Website'}
             link={websiteUrl}
             linkTitle={`${title} - ${(lang === 'pl') ? 'Strona www' : 'Website'}`}
+            className="w-full sm:w-fit"
+            iconPlacement="right"
+            icon={<ArrowTopRight />}
         />
     </div>
   );
