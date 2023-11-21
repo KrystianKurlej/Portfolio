@@ -153,18 +153,20 @@ export const ProjectFooter: React.FC<ProjectFooterProps> = ({
   );
 };
 
-interface ProjectImageProps {
+interface SkeletonImageProps {
     alt: string;
     src: string;
     width: number;
     height: number;
+    className?: string;
 }
 
-export const ProjectImage: React.FC<ProjectImageProps> = ({
+export const SkeletonImage: React.FC<SkeletonImageProps> = ({
     alt,
     src,
     width,
-    height
+    height,
+    className
 }) => {
     const [imageLoaded, setImageLoaded] = useState(false);
     const handleImageLoaded = () => {
@@ -178,21 +180,118 @@ export const ProjectImage: React.FC<ProjectImageProps> = ({
         alt={alt}
         width={width}
         height={height}
-        className="rounded"
+        className={`rounded ${className}`}
         onLoadingComplete={handleImageLoaded}
       />
     </div>
   );
 };
 
-export function Text({
-    children,
-  }: {
+interface TextProps {
     children: React.ReactNode
-  }) {
+}
+
+export const Text: React.FC<TextProps> = ({
+    children
+}) => {
   return (
     <p className="mb-4 font-light">
         {children}
     </p>
+  );
+};
+
+interface SectionProps {
+    children: React.ReactNode,
+    id: string;
+    label?: string;
+    link?: string;
+    linkLabel?: string;
+}
+
+export const Section: React.FC<SectionProps> = ({
+    children,
+    id,
+    label,
+    link,
+    linkLabel
+}) => {
+  return (
+    <section id={id} className="mt-8">
+        {label &&
+            <span className="px-4 text-neutral-500">{label}</span>
+        }
+        {children}
+        {(link && linkLabel) &&
+            <div className="px-4">
+                <Button
+                    label={linkLabel}
+                    link={link}
+                    linkTitle={linkLabel}
+                    iconPlacement="right"
+                    icon={<ArrowTopRight />}
+                />
+            </div>
+        }
+    </section>
+  );
+};
+
+interface ListProps {
+    children: React.ReactNode,
+    title?: string;
+    subtitle?: string;
+    supportText?: string;
+    className?: string;
+}
+
+export const List: React.FC<ListProps> = ({
+    children,
+    title,
+    subtitle,
+    supportText,
+    className
+}) => {
+  return (
+    <div className="p-4 rounded-lg border border-neutral-600 mb-2">
+        {(subtitle || supportText) &&
+            <div className="flex flex-col-reverse min-[375px]:flex-row min-[375px]:justify-between w-full mb-1">
+                {subtitle &&
+                    <p className="font-light">
+                        {subtitle}
+                    </p>
+                }
+                {supportText &&
+                    <p className="font-light">
+                        {supportText}
+                    </p>
+                }
+            </div>
+        }
+        {title &&
+            <h2 className="text-3xl font-medium">
+                {title}
+            </h2>
+        }
+        <ul className={`mt-4 ${className}`}>
+            {children}
+        </ul>
+    </div>
+  );
+};
+
+interface ListItemProps {
+    text: string;
+    className?: string;
+}
+
+export const ListItem: React.FC<ListItemProps> = ({
+    text,
+    className
+}) => {
+  return (
+    <li className={`py-1 border-t border-neutral-700 font-light text-neutral-200 text-sm ${className}`}>
+        {text}
+    </li>
   );
 };

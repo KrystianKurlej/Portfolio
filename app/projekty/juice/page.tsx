@@ -1,4 +1,4 @@
-import { FigmaModal, Header, ProjectFooter, ProjectImage, Text } from "@/app/components/ProjectContent";
+import { FigmaModal, Header, ProjectFooter, SkeletonImage, Text } from "@/app/components/Content";
 
 const Page = () => {
   return (
@@ -9,7 +9,7 @@ const Page = () => {
       githubUrl="https://github.com/KrystianKurlej/juice"
       websiteUrl="https://juice-bay.vercel.app/"
     />
-    <ProjectImage
+    <SkeletonImage
       src='/img/Juice - Header.jpg'
       alt="Juice - Header"
       width={1050}
@@ -24,7 +24,7 @@ const Page = () => {
     <Text>
       Juice. to projekt platformy e-commerce, dedykowanej sprzedaży zdrowych soków o różnorodnych korzyściach dla zdrowia. W tym projekcie unikam konwencjonalnego akcentowania naturalności produktów, a skupiam się na wprowadzeniu nowoczesnej wizji handlu sokami.
     </Text>
-    <ProjectImage
+    <SkeletonImage
       src='/img/Juice - Sklep.jpg'
       alt="Juice - Sklep"
       width={1050}
@@ -33,7 +33,7 @@ const Page = () => {
     <Text>
       Podejście do samego procesu zakupu musiało być nieco inne niż w standardowych projektach platform e-commerce. Specyfika produktu sprawia, że użytkownik nie powinien odczuwać, że proces jest zbyt długi, zachowując przy tym dodatkowe możliwości takie jak odejmowanie składników od gotowego produktu.
     </Text>
-    <ProjectImage
+    <SkeletonImage
       src='/img/Juice - Koszyk.jpg'
       alt="Juice - Koszyk"
       width={1050}

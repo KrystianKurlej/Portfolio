@@ -1,4 +1,4 @@
-import { FigmaModal, Header, ProjectImage, Text } from "@/app/components/ProjectContent";
+import { FigmaModal, Header, SkeletonImage, Text } from "@/app/components/Content";
 
 const Page = () => {
   return (
@@ -7,7 +7,7 @@ const Page = () => {
       lang="pl"
       title="AlumiDrop"
     />
-    <ProjectImage
+    <SkeletonImage
       src='/img/AlumiDrop - Mockup.jpg'
       alt="AlumiDrop - Mockup"
       width={1050}

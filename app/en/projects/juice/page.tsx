@@ -1,4 +1,4 @@
-import { FigmaModal, Header, ProjectFooter, ProjectImage, Text } from "@/app/components/ProjectContent";
+import { FigmaModal, Header, ProjectFooter, SkeletonImage, Text } from "@/app/components/Content";
 
 const Page = () => {
   return (
@@ -9,7 +9,7 @@ const Page = () => {
       githubUrl="https://github.com/KrystianKurlej/juice"
       websiteUrl="https://juice-bay.vercel.app/"
     />
-    <ProjectImage
+    <SkeletonImage
       src='/img/Juice - Header.jpg'
       alt="Juice - Header"
       width={1050}
@@ -24,7 +24,7 @@ const Page = () => {
     <Text>
       Juice. is a project of an e-commerce platform dedicated to selling healthy juices with various health benefits. In this project, I avoid the conventional emphasis on the naturalness of the products and instead focus on introducing a modern vision of juice trading.
     </Text>
-    <ProjectImage
+    <SkeletonImage
       src='/img/Juice - Sklep.jpg'
       alt="Juice - Sklep"
       width={1050}
@@ -33,7 +33,7 @@ const Page = () => {
     <Text>
       The approach to the purchasing process had to be somewhat different than in standard e-commerce platform projects. The specificity of the product means that the user should not feel that the process is too long, while still maintaining additional possibilities such as subtracting ingredients from the finished product.
     </Text>
-    <ProjectImage
+    <SkeletonImage
       src='/img/Juice - Koszyk.jpg'
       alt="Juice - Koszyk"
       width={1050}

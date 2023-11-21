@@ -1,4 +1,4 @@
-import { FigmaModal, Header, ProjectImage, Text, ProjectFooter } from "@/app/components/ProjectContent";
+import { FigmaModal, Header, SkeletonImage, Text, ProjectFooter } from "@/app/components/Content";
 
 const Page = () => {
   return (
@@ -9,7 +9,7 @@ const Page = () => {
       githubUrl="https://github.com/KrystianKurlej/Karnatech"
       websiteUrl="https://karnatech.pl/"
     />
-    <ProjectImage
+    <SkeletonImage
       src='/img/Karnatech - Header.jpg'
       alt="Karnatech - Header"
       width={1050}
